@@ -27,7 +27,7 @@
 import React, {useEffect, useState} from 'react';
 import axios from "axios";
 import {Container, Button, Card, Row, Col , Spinner} from "react-bootstrap";
-import {Link, useNavigate} from "react-router-dom";
+import {Link } from "react-router-dom";
 
 const Main = () => {
 
@@ -88,6 +88,8 @@ const Main = () => {
 
 export default Main;
 
+// 복사 붙여넣기 금지
+
 // 코드 빌드 순서
 /*
 
@@ -99,9 +101,26 @@ export default Main;
 
  */
 
-// 부트스트랩 설치
+// 부트스트랩 설치 및 사용법
 
 /*
     1. public에 index.html 에 cdn 방식 or index.js에 global 방식
-    2.
+    2. Row 는 한 줄 , Col은 한 줄에서 갯수
 */
+
+// 네트워크 & 데이터 파싱
+
+/*
+    1. async await을 사용해 비동기 방식으로 통신 + try ~ catch 문 활용
+    2. 구조분해할당을 이용해 통신으로 가져온 데이터를 구조분해한다.
+    3. status 활용 
+ */
+
+
+// 라우팅 활용 
+
+/*
+    1. 기존에 사용하던 방식 말고 router라는 파일을 만들어서 createBrowserRouter hook을 활용해 배열 형태로 사용한다.
+    2. 파람 값 가져올떄 useParams() 사용
+*/
+
